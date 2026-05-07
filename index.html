@@ -6,41 +6,129 @@
   <title>Vanyara</title>
 
   <style>
-    body{
+    *{
       margin:0;
-      background:#111;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family: Arial, sans-serif;
+      background:#0f1115;
       color:white;
-      font-family:Arial;
+      overflow-x:hidden;
+    }
+
+    .hero{
+      height:100vh;
       display:flex;
+      flex-direction:column;
       justify-content:center;
       align-items:center;
-      height:100vh;
+      text-align:center;
+      padding:20px;
+      background:
+      linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+      url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
     }
 
     h1{
-      font-size:60px;
+      font-size:70px;
+      margin-bottom:20px;
+      letter-spacing:2px;
+    }
+
+    p{
+      max-width:700px;
+      font-size:20px;
+      line-height:1.7;
+      color:#ddd;
+    }
+
+    .btn{
+      margin-top:35px;
+      padding:14px 30px;
+      border:none;
+      background:#d4af37;
+      color:black;
+      font-size:18px;
+      border-radius:8px;
+      cursor:pointer;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    .section{
+      padding:100px 20px;
+      text-align:center;
+      background:#151922;
+    }
+
+    .section h2{
+      font-size:42px;
+      margin-bottom:20px;
+    }
+
+    .section p{
+      margin:auto;
+    }
+
+    footer{
+      padding:25px;
+      text-align:center;
+      background:black;
+      color:#888;
+    }
+
+    @media(max-width:768px){
+
+      h1{
+        font-size:42px;
+      }
+
+      p{
+        font-size:16px;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<h1>Vanyara Website Live 🚀</h1>
+  <section class="hero">
+    <h1>VANYARA</h1>
 
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Vanyara Holiday Homes</title>
-</head>
+    <p>
+      Where nature is not just a backdrop,
+      but a way of living.
+    </p>
 
-<body style="background:black; color:white; text-align:center; padding-top:100px; font-family:sans-serif;">
+    <a href="#" class="btn">Explore More</a>
+  </section>
 
-  <h1>Welcome to Vanyara Holiday Homes 🌴</h1>
+  <section class="section">
+    <h2>Luxury Living In Nature</h2>
 
-  <p>Luxury Holiday Homes Near Nature & Peace</p>
+    <p>
+      Experience peace, greenery and mindful living
+      surrounded by the raw beauty of nature.
+    </p>
+  </section>
 
-  <button>Explore Now</button>
+  <section class="section">
+    <h2>Second Home Destination</h2>
+
+    <p>
+      A thoughtfully designed retreat crafted for
+      comfort, calmness and premium living.
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Vanyara. All Rights Reserved.
+  </footer>
 
 </body>
 </html>
